@@ -2,12 +2,16 @@ import { Button } from "@headlessui/react";
 import React, { useContext } from "react";
 import { createuserdoc } from "../libs/firebaseconfig";
 import { userAuth } from "../libs/usercontext";
+import {useNavigate  } from "react-router-dom";
 
 export const SingleProduct = ({ product }) => {
+  const navigate = useNavigate();
   const { user } = useContext(userAuth);
   const handleAddTOCart = () => {
     if (user) {
       createuserdoc(user, product);
+    }else{
+    navigate("/signin");
     }
   };
 

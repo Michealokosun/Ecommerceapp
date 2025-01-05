@@ -93,10 +93,11 @@ export default function Navbarconponent() {
                     Setcartopen(true);
                   }}
                   type="button"
-                  className="relative cursor-pointer rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                  className=" cursor-pointer relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only">View cart</span>
+                  <span className="absolute   text-white text-xs top-3 left-4">1</span>
                   <ShoppingBagIcon aria-hidden="true" className="size-7" />
                 </button>
 

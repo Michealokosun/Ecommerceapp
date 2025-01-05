@@ -78,8 +78,7 @@ export const logoutuser = () =>
       // An error happened.
     });
 
-// const products = [
-//   {
+
 //     id: 1,
 //     name: "Wireless Mouse",
 //     description: "A smooth and precise wireless mouse with ergonomic design.",
@@ -159,7 +158,6 @@ export const logoutuser = () =>
 // ];
 
 // export default products;
-
 export const createuserdoc = async (user, product) => {
   try {
     const cartCollectionRef = collection(db, "users", user.uid, "cartItems");
